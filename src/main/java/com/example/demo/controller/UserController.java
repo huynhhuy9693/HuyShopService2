@@ -56,7 +56,7 @@ public class UserController {
     {
         System.out.println("Creating User " +userTb.getName());
         service.saveUser(userTb);
-        return "redirect:/admin/users";
+        return "redirect:http://localhost:8080/admin_user/users";
     }
 
     @DeleteMapping("user/delete/{id}")
@@ -88,7 +88,7 @@ public class UserController {
 
         System.out.println("Updating User " + id);
         service.saveUser(userTb);
-        return "redirect:/admin/users";
+        return "redirect:http://localhost:8080/admin_user/users";
 
     }
 }

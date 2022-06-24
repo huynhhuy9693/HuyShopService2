@@ -52,7 +52,7 @@ public class RoleController {
     {
         System.out.println("Creating Role " +role.getName());
         service.saveRole(role);
-        return "redirect:/admin/roles";
+        return "redirect:http://localhost:8080/admin_user/roles";
     }
 
     @DeleteMapping("role/delete/{id}")
@@ -81,7 +81,7 @@ public class RoleController {
 
         System.out.println("Updating Role " + id);
         service.saveRole(role);
-        return "redirect:/admin/roles";
+        return "redirect:http://localhost:8080/admin_user/roles";
 
     }
 }
